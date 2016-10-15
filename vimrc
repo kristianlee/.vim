@@ -353,3 +353,6 @@ map <Leader><Leader>h :setfiletype html<CR>
 
 " add another comment line shortcut
 map <Leader>/ <Leader>c<space>
+
+" open a read-only file, but use vim to save out using sudo, use :w!!
+cmap w!! %!sudo tee > /dev/null
