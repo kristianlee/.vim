@@ -75,7 +75,7 @@ map <Leader>ns :tnext<CR>
 
 "Nice statusbar
 set laststatus=2
-set statusline+=%{fugitive#statusline()}
+set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 "set statusline+=%2*%-3.3n%0*\                " buffer number
 "set statusline+=%f\                          " file name
 "set statusline+=%h%1*%m%r%w%0*               " flags
